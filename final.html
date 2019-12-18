@@ -1,0 +1,412 @@
+<html>
+
+<head>
+    <title>Medium – Get smarter about what matters to you.</title>
+    <link rel="shortcut icon" href="new.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet type=text/css" href="output1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function add()
+        {
+            var content=document.getElementById("name").value;
+            var Description=document.getElementById("dsc").value;
+            var author=document.getElementById("author").value;
+            var date=document.getElementById("date").value;
+            var image=document.getElementById("Image").value;
+            var element="";
+
+            element=
+            `<div class="subcont-1"> 
+                    <div class="subcont-cont">
+                        <p>`+content+`</p>
+                        <h2>`+Description+`</h2>
+                        <p id="inside0">`+Description+`</p>
+                        <p id="inside">`+author+`</p>
+                        <p id="inside2">`+date+` read  <span class="inside3">
+                                <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                        </div>
+                        <div class="subcont-img">
+                            <img src="`+image+`">
+                        </div>
+            </div>`
+           var post=document.getElementsByClassName("subcont-1");
+           var satheesh=post[0];
+           satheesh.insertAdjacentHTML("beforebegin",element);
+        document.getElementById("name").value="";
+        document.getElementById("dsc").value="";
+        document.getElementById("author").value="";
+        document.getElementById("date").value="";
+        document.getElementById("Image").value="";
+        }
+</script>
+<script>
+        // var mybutton = document.getElementById("myBtn1");
+                window.onscroll = function() {scrollFunction()};
+                function scrollFunction() {
+                        if (document.body.scrollTop >500 || document.documentElement.scrollTop > 500) {
+                                document.getElementById("myBtn1").style.display = "block";
+                        } else {
+                                document.getElementById("myBtn1").style.display = "none";
+                }
+                
+        }
+        // function topFunction() {
+        //                  document.body.scrollTop = 0;
+        //                  document.documentElement.scrollTop = 0;
+        //                 }
+                
+        </script>
+    
+</head>
+
+<body>
+    <div class="header" id="top123">
+        <h1>Medium</h1>
+        <div class="head1">
+            <ul style="list-style-type:none">
+                <li style="margin-right: 25;"><form id="demo-2"><input type="search" placeholder="search"></form></li>
+                <li style="margin-right: 25; border-inline-color: white;"><i class="fa fa-bell"></i></li>
+                <li style="margin-right: 25; background:white;"><button id="head-button">Upgrade</button></li>
+                <li style="margin-right: 25;"><button style="border-radius: 100%; vertical-align: middle;">S</button></li>
+                <ul>
+        </div>
+    </div>
+    <div class="fix">
+        <button class="button-in1" id="button-1">
+                <i class="fa fa-angle-left" aria-hidden="true" style="size:100"></i>
+        </button> 
+        <div class="home" id="home-in"> 
+                <button><b>HOME</b></button>
+                <button>ONEZERO</button>
+                <button>ELEMENTAL</button>
+                <button>GEN</button>
+                <button>ZORA</button>
+                <button>FORGE</button>
+                <button>HUMAN PARTS</button>
+                <button id="hid">MARKER</button>
+                <button id="hid">LEVEL</button>
+                <button id="hid">HEATED</button>
+                <button id="hid">MODUS</button>
+                <button id="hid">MORE</button>       
+        </div>
+        <button class="button-in2" id="button-2">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+   </div>
+    
+    <div class="main" id="main">
+            
+         
+    
+        <div class="sub1" id="sub1">    
+                    <p><img src="mask.png">
+                   <a href="medium.com"><h2 style="cursor: pointer; margin-left: 80px;">Show your own face and character to the world...</h2></a>
+                    <p style="cursor: pointer;margin-left: 80px;">An unconventional and compassionate guide to becoming an early bird..</p>
+                    <h7 style="color:gray; margin-left: 80px;"> Aug 22,2018 18 mins read &bigstar;</h7>
+                    </p>
+        </div>
+
+        <div class="sub2" id="sub2">
+            <div class="subin-1">
+                    <div class= subin-img>
+                        <img src="fst1.png">
+                    </div>
+                    <div class=subin-cont>
+                            <h4>How to Configure Your iPhone to Work for You, Not Against You...</h4>
+                            <p>jessica wildfire splattered</p>
+                            <h7 id="insub2">Nov 14,2018  9 mins read &bigstar;</h7>
+                    </div>
+                </div>
+                <div class="subin-1">
+                        <div class= subin-img>
+                                <img src="scnd.jpeg">
+                        </div>
+                        <div class=subin-cont>
+                             <h4>How To Digest Books Above Your “Level” And Increase...</h4>
+                             <p>Ayodeji Awosika in publishous</p>
+                             <h7 id="insub2">Dec12,2018   12 mins read &bigstar;</h7>
+                        </div>
+                </div>
+                <div class="subin-1">
+                        <div class= subin-img>
+                                <img src="third.jpeg">
+                        </div>
+                        <div class="sub-cont">
+                            <h4>Working for a company Vs. Working for Yourself...</h4>
+                            <p>Sarah Cooper in the Cooper Review</p>
+                            <h7 id="insub2">Oct 15,2017  3 mins read &bigstar;</h7>
+                        </div>
+                </div>
+                <br/>
+                <center> 
+                        <button id="myBtn" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add</button>
+                </center>
+       
+
+        </div>
+        <div class="sub3" id=sub3> 
+                <p><img src="four.jpeg">
+                <h4 style="cursor: pointer;">Don't speak badwords...Don't see the bad things...Don't hear badwords..</h4> 
+                <p style="cursor: pointer;">Caelean Hunters Mission.org</p>
+                <h7 style="color:gray;">Nov 17,2018 19 mins read &bigstar;</h7><br/><br/><br/><br/>
+                <h12 style="color:green; cursor: pointer; margin-left: 150px;">SEE ALL FEATURED&nbsp;<span>
+                    <i class="fa fa-angle-right"></i></span></h12>    
+                </p>
+             
+        </div>
+
+
+    </div>
+    <div class="line">
+        <hr style="margin-left: 100px; margin-right:100px;border:1px solid rgba(0,0,0,.15)"> 
+    </div>
+
+<div>
+<div class="content" id=content>
+    <div class="content1" id=content1>
+            <div class="subcont-1">
+                    <div class=subcont-cont>
+                            <p>SCIENCE &nbsp;<i> popular Topic</i></p>
+                            <h2> What Your Microbiome Really Needs Is Fibre,Not Kombucha</h2>
+                            <p id="inside0">Some microbes reside permanently in our guts.others are just passing through.</p>
+                            <p id="inside">Katherine courage in Elemental</p>
+                            <p id="inside2"> Feb 4,2017 7 mins read &bigstar;<span class="inside3"><i class="fa fa-bookmark"></i>
+                                <i class="fa fa-ellipsis-h" style="margin-left:20px;"></i>
+                            </span></p>
+                        </div>
+                <div class=subcont-img>
+                    <img src="virus.jpeg">
+                </div>  
+            </div>
+           <div class="subcont-1">
+                    <div class="subcont-cont">
+                        <p>POPULAR ON MEDIUM</p>
+                        <h2> Jeff Bezos's Saturday Morning Routine</h2>
+                        <p id="inside0">5:15:AM internal performance optimiztation is activated.Eyes fly is open.</p>
+                        <p id="inside">Molly Gelpke in Slackjaw</p>
+                        <p id="inside2"> Dec 23,2017 4 mins read &bigstar;<span class="inside3">
+                            <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left:20px;"></i></span>
+                        </p>
+                    </div>
+                    <div class=subcont-img>
+                            <img src="bezos.jpeg">
+                    </div>
+            </div> 
+         <div class="subcont-1">
+                <div class="subcont-cont">
+                        <p>SPRITUALITY  &nbsp;<i>popular Topic</i></p>
+                        <h2> Jesus and Laughing Buddha </h2>
+                        <p id="inside0">We can learn a lot about what is missing every religious and tradition</p>
+                        <p id="inside">Kenneth Leong</p>
+                        <p id="inside2">Feb 23, 5 mins read &bigstar; <span class="inside3">
+                                <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                </div>
+                <div class=subcont-img>
+                        <img src="jesus.jpeg">
+                </div>
+            </div>
+           <div class="subcont-1">
+                <div class="subcont-cont">
+                        <p>BASED ON YOUR READING PROPERTY</i></p>
+                        <h2> Don’t Understand About Why Women Don’t Date Nice Guys</h2>
+                        <p id="inside0">Hint:It has Nothing to do With Niceness</p>
+                        <p id=inside>Joe Duncan in Moments of Fasion</p>
+                        <p id="inside2">Feb 23, 5 mins read &bigstar; <span class="inside3">
+                                <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                </div>
+                <div class=subcont-img>
+                        <img src="women.jpeg">
+                </div> 
+            </div>
+            <div class="subcont-1">
+                    <div class="subcont-cont">
+                    <p>CULTURE &nbsp;<i>popular Topic</i></p>
+                    <h2>how to Do Nothing</h2>
+                    <p id="inside0">This is the transcript of keyNote talk I gave at EYEO</p>
+                    <p id="inside">Jenny Odaell</p>
+                    <p id="inside2">Jun 30,2017 5 mins read &bigstar; <span class="inside3">
+                            <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                    </div>
+                    <div class="subcont-img">
+                            <img src="nothing.jpeg">
+                    </div>
+            </div>
+            <div class="subcont-1">
+                    <div class="subcont-cont">
+                            <p>HEALTH  &nbsp;<i>popular Topic</i></p>
+                            <h2>Quitting Zyrtec Is"Total Hell"</h2>
+                            <p id="inside0">Users of the popular allergy drug can experience withdraw symptoms</p>
+                            <p id="inside">Kenneth Leong</p>
+                            <p id="inside2">Feb 23, 5 mins read &bigstar; <span class="inside3">
+                                    <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                    </div>
+                    <div class="subcont-img">
+                        <img src="zytec.jpeg">
+                    </div>
+            </div>
+            <div class="subcont-1">
+                    <div class="subcont-cont">
+                        <p>PRODUCTIVITY &nbsp;<i>popular Topic</i></p>
+                        <h2>Top 10 Skills People Want Learn in 2019 And  How to Learn it</h2>
+                        <p id="inside0">Real data collected from SkillsUp Your Life Program</p>
+                        <p id="inside">Danny Forest in Skillup Ed</p>
+                        <p id="inside1">Feb 23, 5 mins read &bigstar; <span class="inside3">
+                                <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                    </div>
+                    <div class="subcont-img">
+                            <img src="skill.jpeg">
+                    </div>
+            </div>
+            <div class="subcont-1"> 
+                    <div class="subcont-cont">
+                        <p>PRODUCTIVITY &nbsp;<i>popular Topic</i></p>
+                        <h2>8 Tips for waking up Early Morning&Conquering Alaram Clock</h2>
+                        <p id="inside0">Early to bed and early to rise makes Man healthy</p>
+                        <p id="inside">Jeff Goins in Better Humans</p>
+                        <p id="inside2">Feb 23, 5 mins read &bigstar; <span class="inside3">
+                                <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                        </div>
+                        <div class="subcont-img">
+                            <img src="tips.jpeg">
+                        </div>
+            </div>
+            <div class="subcont-1">
+                    <div class="subcont-cont">
+                            <p>HEALTH  &nbsp;<i>popular Topic</i></p>
+                            <h2>Why Delayed Ejaucation IS Hard to Slove</h2>
+                            <p id="inside0">Man fantasize about the sexual relation</p>
+                            <p id="inside">Shane Paul Neil in level</p>
+                            <p id="inside2">Feb 23, 5 mins read &bigstar; <span class="inside3">
+                                    <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                    </div>
+                    <div class="subcont-img">
+                            <img src="health.jpeg">
+                    </div>
+            </div>
+            <div class="subcont-1">
+                    <div class="subcont-cont">
+                            <p>BASED ON YOUR READING PROPERTY</p>
+                            <h2>How to Not Be a Sexual Predator When Hitting On Woman</h2>
+                            <p id="inside0">The Secret?"Stop Hitting On Woman"</p>
+                            <p id="inside">Arniecea Arnay</p>
+                            <p id="inside2">Jan 2, 6 mins read &bigstar; <span class="inside3">
+                                    <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                    </div>
+                    
+                    <div class="subcont-img">
+                            <img src="pred.jpeg">
+                    </div>
+            </div>
+            <div class="subcont-1">
+                    <div class="subcont-cont">
+                        <p>SPRITUALITY &nbsp;<i>popular Topic</i></p>
+                        <h2>The Law of Letting Go to Recieve</h2>
+                        <p id="inside0">Trusting the Universe,and Letting Go Of Attachment</p>
+                        <p id="inside">Harry J.Stead in Personal Growth</p>
+                        <p id="inside2">Aug 13, 13 mins read &bigstar; <span class="inside3">
+                                <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                    </div>
+                    <div class="subcont-img">
+                            <img src="law.jpg">
+                    </div>
+            </div>
+            <div class="subcont-1">
+                    <div class="subcont-cont">
+                            <p>POPULAR ON MEDIUM</i></p>
+                            <h2>3 Terminal Commands to Increase Your Productivity</h2>
+                            <p id="inside0">Aliases,pbcopy,reverse search and a few bonuses</p>
+                            <p id="inside">Pankaj Gupta in Better Programming</p>
+                            <p id="inside2">Nov 26, 5 mins read &bigstar; <span class="inside3">
+                            <i class="fa fa-bookmark"></i><i class="fa fa-ellipsis-h" style="margin-left: 20px;"></i></span></p>
+                   </div>
+                    <div class="subcont-img">
+                            <img src="terminal.jpeg">
+                    </div>
+            </div>
+    </div>
+    <div class="content2" id=content2>
+                <div class="content2-head">
+                    <h2>Popular On Medium</h2>
+                </div>
+                <hr style="color:gray; margin-left: 0px; margin-right:86px;margin-top: -6px;border: 1px solid rgba(0,0,0,.15)">
+            <div class="end">
+                <p id="end0">01</p>
+                <ul style="list-style-type:none; margin-left:5%">
+                    <li><h3 id="endstyle">A Nude ‘Playboy’ Photo Has Been a Mainstay in Testing Tech for Decades<h3></li>   
+                    <li><p id="end1">courinne in one zero<p></li> 
+                    <li><p id ="end2">Nov 26, 7 min read&bigstar;</p><li>
+                    </ul>
+            </div>
+            <div class="end">
+                    <p id="end0">02</p>
+                    <ul style="list-style-type:none; margin-left:5%">
+                    <li><h3 id="endstyle">Stop Obsessing About Focus: Here’s What Your Mind Really Needs<h3></li>   
+                    <li><p id="end1">silvia Bastos in Better Humans<p></li> 
+                    <li><p id ="end2">Nov 28, 11 min read&bigstar;</p><li>
+                    </ul>
+            </div>   
+            <div class="end">
+                    <p id="end0">03</p>
+                    <ul style="list-style-type:none;margin-left:5%">
+                    <li><h3 id="endstyle">The Self-Help Movement That Is Upending American Christianity<h3></li>   
+                    <li><p id="end1">Allegra Hobbs in Forge<p></li> 
+                    <li><p id ="end2">Nov 26, 18 mins read&bigstar;</p><li>
+                    </ul>
+
+            </div>
+            <div class="end">
+                    <p id="end0">04</p>
+                    <ul style="list-style-type:none;margin-left:5%">
+                    <li><h3 id="endstyle">Three Magical Phrases to Comfort a Dying Person<h3></li>   
+                    <li><p id="end1">Jenny Harrington in Human Parts<p></li> 
+                    <li><p id ="end2">Mar 10, 10 mins read&bigstar;</p><li>
+                    </ul>
+            </div>
+            
+            <div class="footer">
+                <p><a href="">Help</a>&nbsp;
+                <a href="">Status</a>&nbsp;
+                <a href="">Writters</a>&nbsp;
+                <a href="">Blog</a>&nbsp;
+                <a href="">Careers</a><br/>
+                <a href="">Privacy</a>&nbsp;
+                <a href="">Terms</a>&nbsp;
+                <a href="">About</a></p>
+                
+                </div>
+                
+                    <!-- <button onclick="topFunction()" id="myBtn1" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i> -->
+                        <a href=#top123 ><button id=myBtn1><i class="fa fa-arrow-up" aria-hidden="true"></i></button></a>
+                    </button>
+        </div>
+        
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <b><h4 style="margin-left:150px;">Enter the New Content in Medium</h4></b>
+                            <label>Content Name:</label>
+                            <input autocomplete="off" id="name" placeholder="Content Name" value="" class="in"><br/><br/>
+                            <label>Description&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+                            <input autocomplete="off" id="dsc" placeholder="Description" value="" class="in"><br/><br/>
+                            <label>Author&nbsp&nbsp&nbsp&nbsp:</label>
+                            <input autocomplete="off" id="author" placeholder="Author" value="" class="in"><br/><br/>
+                            <label>Date&nbsp&nbsp&nbsp&nbsp:</label>
+                            <input autocomplete="off" id="date" placeholder="Date" value="" class="in"><br/><br/>
+                            <label>Image&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+                            <input autocomplete="off" id="Image" placeholder="Image URL" value="" class="in"><br/><br/><br/>
+                            <center><button type="submit" onclick="add()" value="submit" data-dismiss="modal">Submit</button></center>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+                        </div>
+                  </div>
+                </div>
+            </div>
+</body>
+</html>
